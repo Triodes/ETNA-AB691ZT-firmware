@@ -2,8 +2,9 @@
  * Power colors:
  * BLACK: 5v, WHITE: ground
  * 
- * The board uses single pins for both controlling the LEDs and reading the buttons
- * The pins are in OUTPUT mode most of the time pulling them LOW to turn the LEDs on
+ * The original hood board uses single pins for both controlling the LEDs and reading the buttons
+ * Our analog pins are connected to the negative side of the series resistor of the status leds and the 'floating' side of the button.
+ * Our pins are in OUTPUT mode most of the time pulling them LOW to turn the LEDs on
  * They are toggled to INPUT_PULLUP 60 times per second and will then read close to max value (1024) when the button is unpressed
  * When the button is pressed the pin will be pulled to around 3v (600 analog value) through a 10k resistor.
  * Led/Button pin colors in order from 0 to 4:
